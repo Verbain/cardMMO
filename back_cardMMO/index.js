@@ -1,6 +1,7 @@
 const express = require('express')
 const usersController = require('./src/controllers/usersController')
 const navigationController = require('./src/controllers/navigationController')
+const charactersController = require('./src/controllers/charactersController')
 const bodyParser = require('body-parser')
 const app = express()
 const path = require('path');
@@ -35,6 +36,11 @@ app.post('/updateEmailUser',usersController.updateEmail)
 app.post('/updatePseudoUser',usersController.updatePseudo)
 // POST LOGIN
 app.post('/api/login',urlEncodedParser,usersController.login)
+
+// Characters route
+// POST CREACTE CHARACTERS
+app.post('/api/newCharacters',charactersController.createCharacter)
+app.get('/api/character/:playerId',charactersController.getCharacterPlayer)
 
 app.listen(3000,function(){
     console.log("app listening on port 3000")

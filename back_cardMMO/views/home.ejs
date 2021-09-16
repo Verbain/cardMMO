@@ -9,6 +9,7 @@
     <h1>WELCOME TO CARDMMO <%= pseudo %></h1>
     <a href="api/view/login">LOGIN</a>
     <a href="api/view/logout">LOGOUT</a>
-    <a href="api/view/profile">PROFILE</a>
+    <% if (pseudo){ %> <a href="api/view/profile">PROFILE</a> <%}%>
+    <p><%= character %></p>
 </body>
 </html>
