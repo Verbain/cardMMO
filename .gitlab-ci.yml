@@ -12,4 +12,4 @@ build:
 backrun:
   stage: stage2
   script:
-    - npm start
+    - node index.js
