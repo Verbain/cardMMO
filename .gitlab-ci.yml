@@ -1,13 +1,12 @@
 stages:
   - stage1
-  - stage2
 
 image: node:latest
 
 build:
   stage: stage1
   script:
-    - console.log("Hello World")
+    - echo "Hello World"
 
 backrun:
   stage: stage2
