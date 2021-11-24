@@ -2,7 +2,7 @@ stages:
   - stage1
   - stage2
 
-image: node<3.12>-alpine
+image: node:latest
 
 build:
   stage: stage1
