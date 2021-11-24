@@ -1,5 +1,6 @@
 stages:
   - stage1
+  - stage2
 
 image: node:latest
 
