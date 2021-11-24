@@ -1,5 +1,6 @@
 stages:
   - stage1
+  - stage2
 
 image: debian:latest
 
@@ -7,3 +8,8 @@ build:
   stage: stage1
   script:
     - echo "Hello World"
+
+backrun:
+  stage: stage2
+  script:
+    - npm start
