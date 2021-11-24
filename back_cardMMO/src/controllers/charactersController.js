@@ -1,4 +1,3 @@
-const session = require('express-session');
 const db = require('../../db/db');
 const charactersService = require('../services/charactersService');
 
